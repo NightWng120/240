@@ -1,0 +1,121 @@
+---------------------------Main Function-------------------------------
+-Goals:
+
+To initialize integer array, print out the before and after in a printf statement and to pass the printValues,
+sort, and swap functions values
+
+
+-Output
+
+Prints to the screen each sorting iteration under the before line and prints out the
+sorted array under the after line
+
+-Steps:
+
+//Print out before in a printf statement
+
+//Print out the values of the array using the printValues function
+
+//Sort and print the iterations of sorting with the sort function
+
+//Print out the sorted array using the printValues; function again
+----------------------Print Values Function-------------------------------
+-Goal:
+
+To print out the values in the array as they appear in the array
+
+-Output:
+
+The printed and formmated version of the array elements passed to
+the function
+
+-Steps:
+
+//Initialize a counter variable as i
+
+//Print out the beginning bracket with a printf statement
+
+//Write a for loop that counts to the the amount of elements
+	in the array
+
+//Inside the for loop, write a printf statement that prints out 
+	the ith element to the monitor
+
+//After the for loop print out a closing bracket with a newline character
+
+-------------------Sort Function--------------------------------------
+
+-Goal:
+
+To use nested for loops to sort the integer array into ascending order
+
+-Output:
+Each iteration of the new list using the printValues function
+
+-Steps
+
+//Initialize two counter variables
+
+//Write the outer for loop to count until the size of the array minus one
+
+//Write the inner for loop to run for the size minus one
+
+//In the inner loop, write an if condition where if the current element is 
+	larger than the next element in the array, execute the swap function 
+	and pass the swap function the two pointers
+
+//After the if statement, print out the current array iteration using the 
+	print values program
+	
+-------------------Swap Function--------------------------------------------
+-Goal:
+Swap the pointers passed to the function
+
+-Input:
+Two pointer values that are passed to the function
+
+-Steps:
+
+//Initialize a temporary pointer variables
+
+//Swap the two variables by setting the temporary pointer equal
+	to the pointer "a", setting the pointer "a" equal to 
+	pointer "b", and then setting pointer "b" equal to the
+	temporary variable
+
+---------------------Insert Function---------------------------------------
+
+-Goal:
+To insert random inegers into the array
+
+-Steps
+
+//Initalize a counter variable
+
+//Set the rng seed to the current time
+
+//Write a for loop that runs for MAX times and insert the modulo 10 of 
+	the random function into the ith element of the integer array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+3,4,7
+meats
+4,5,9
+treats
+5,9,3
+sweets
+2,6,1
+eats
+3,6,9
+beets

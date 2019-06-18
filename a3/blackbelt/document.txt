@@ -1,0 +1,3 @@
+My second black belt program is a modification of the horse race program that allows
+the user to make bets on horses, select difficulty levels, and a have a running bank amount
+that gets increased or decreased by the betted amount depending on the outcome of the horse race
