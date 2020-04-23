@@ -328,10 +328,15 @@ class ATM{
 					/*Deposit for checking entry prompt*/
 					in = input.nextDouble();//User input
 					
-					buffer = vecUser.get(num).getCheck();
-					buffer = buffer + in;
-					vecUser.get(num).setCheck(buffer);
-					/*Balance calculation and assignment*/
+					if(in > 0){
+						buffer = vecUser.get(num).getCheck();
+						buffer = buffer + in;
+						vecUser.get(num).setCheck(buffer);
+						/*Balance calculation and assignment*/
+						continue;
+					}//end if
+					System.out.println("Balance cannot be negative");
+					continue;
 				}//end if
 			
 				else if(userInIn.equals("2")){//if condition for second deposit option
@@ -415,7 +420,7 @@ class ATM{
 		String file;
 		double dFile;
 		try{
-			Scanner infile = new Scanner(new File("Bank.txt"));
+			Scanner infile = new Scanner(new File("conn.txt"));
 			size = infile.nextInt();
 			infile.nextLine();
 			for(i = 0; i < size; i++){
@@ -450,7 +455,7 @@ class ATM{
 	}//end load
 	public void save(Vector<User> vecUser){
 		
-			File file = new File("Bank.txt");
+			File file = new File("conn.txt");
 			int i;
 			
 			try{
